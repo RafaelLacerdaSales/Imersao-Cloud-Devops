@@ -1,0 +1,10 @@
+# Define os contêineres (serviços) que compõem a sua aplicação.
+services:
+  # Nome do serviço da sua aplicação. Pode ser qualquer nome, como 'api' ou 'web'.
+  app:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
